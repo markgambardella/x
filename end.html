@@ -1,0 +1,33 @@
+<html>
+<style>
+    .end {
+        word-wrap: break-word;
+        display: inline-block;
+        word-break: break-word;
+        display: inline-block;
+        display: inline-block;
+        word-break: break-word;
+    }
+</style>
+<script>
+    function begin() {
+        var times = Math.floor((Math.random() * 1000) + 500);
+        write(times);
+    }
+
+    function write(y) {
+        for (i = 1; i < y; i++) {
+            var div = document.getElementById('run');
+
+            div.innerHTML = div.innerHTML + ' THE RIDE NEVER ENDS ';
+            var rand = Math.floor((Math.random() * 500) + 1);
+            if (rand === 2) {
+                div.innerHTML = div.innerHTML + ' Ţ̀͟͟͡H̴̡̡͠E̴͏̡͢͡ ̡́͟E̷̡̛͢͠N̷͘͜͝D̷̸̨́͘ ̴͠A̡̡͢P̴̨̡͜P̸̀͠R̀O̧͟͢͜Á̷C̷̢̀̀͞H͘͜͏̶E҉̶҉̵͜S̷͏̶ ';
+            }
+        }
+    }
+    window.onload = begin;
+</script>
+<div id="run" class="end"></div>
+
+</html>
