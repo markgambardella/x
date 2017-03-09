@@ -11,11 +11,7 @@
 </style>
 <script>
     function begin() {
-        var times = Math.floor((Math.random() * 1000) + 500);
-        write(times);
-    }
-
-    function write(y) {
+        var y = Math.floor((Math.random() * 1000) + 500);
         for (i = 1; i < y; i++) {
             var div = document.getElementById('run');
 
@@ -29,5 +25,4 @@
     window.onload = begin;
 </script>
 <div id="run" class="end"></div>
-
 </html>
